@@ -6,7 +6,7 @@
    "source": [
     "# Econoimcs 142 \n",
     "\n",
-    "#Estimating Productivity Using OLS Regerssion/Panel Regression/Proxy Variable Regression\n",
+    "#Estimating Productivity Using OLS Regression/Panel Regression/Proxy Variable Regression\n",
     "#Jiwon Son"
    ]
   },
@@ -26,7 +26,7 @@
     "import matplotlib.pyplot as plt\n",
     "\n",
     "#1.1 Preparing the dataset\n",
-    "# Read in tab delimited dataset into a pandas dataframe\n",
+    "# Read in tab-delimited dataset into a pandas dataframe\n",
     "col_dtypes = {\"gvkey\" : int, \"year\" : int, \"Y\" : float, \"K\" : float, \"L\" : float, \"M\" : float , \"VA\" : float, \"i\" : float, \"naics_4digit\" : int}\n",
     "\n",
     "df = pd.read_csv(\"/Users/davidson/.spyder-py3/mf_firms.out.txt\", dtype = col_dtypes, na_values=\"\", engine=\"c\", sep = \"\\t\", encoding = \"utf−8\")\n",
